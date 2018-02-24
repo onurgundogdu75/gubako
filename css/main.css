@@ -87,22 +87,22 @@ h1 {
     line-height: 90px!important;
 }
 
-#features{
+#features {
     background-color: #f1c40f;
     padding-top: 120px;
     padding-bottom: 120px;
 }
 
-#features .container{
+#features .container {
     text-align: center;
 }
 
-h2{
+h2 {
     font-size: 36px;
     color: #ffffff;
 }
 
-h2::after{
+h2::after {
     content: " ";
     display: block;
     width: 200px;
@@ -111,36 +111,72 @@ h2::after{
     margin: 10px auto;
 }
 
-.sectionText{
+.sectionText {
     font-size: 18px;
     font-style: italic;
     width: 80%;
     margin: 15px auto 60px auto;
 }
 
-.feturesContent{
+.feturesContent {
     display: inline-block;
 }
 
-.col-4{
+.col-4 {
     width: 33.33%;
     float: left;
     padding: 0 20px;
 }
 
-h3{
+h3 {
     color: white;
     font-size: 24px;
     margin-top: 15px;
 }
 
-.col-4 p{
+.col-4 p {
     font-size: 14px;
 }
 
-#portfolio{
+#portfolio {
     background-color: #95a5a6;
-    padding-bottom: 120px;
+    padding-bottom: 80px;
     padding-top: 120px;
     text-align: center;
+}
+
+.portfolioContent {
+    display: inline-block;
+}
+
+#porfolio .container {
+    text-align: center;
+}
+
+.item {
+    position: relative;
+    overflow: hidden;
+}
+
+.item:hover .overlay {
+    top: 0;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(231, 76, 60, 0.8);
+    padding-top: 40px;
+    transition: top 0.4s;
+}
+
+.overlay {
+    top: 100%;
+}
+
+#portfolio .row .col-4{
+    margin-bottom: 40px;
 }
