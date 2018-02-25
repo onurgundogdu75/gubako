@@ -180,3 +180,35 @@ h3 {
 #portfolio .row .col-4{
     margin-bottom: 40px;
 }
+
+#team{
+    background-color: #2ecc71;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+#team .container{
+    text-align: center;
+}
+
+.socialIcon{
+    list-style-type: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.socialIcon li {
+    display: inline;
+}
+
+.teamContent .row{
+    overflow: hidden;
+}
+
+.socialIcon li .fab {
+    font-size: 30px;
+    color: #ffffff;
+    padding-right: 5px;
+    padding-left: 5px;
+}
