@@ -177,21 +177,21 @@ h3 {
     top: 100%;
 }
 
-#portfolio .row .col-4{
+#portfolio .row .col-4 {
     margin-bottom: 40px;
 }
 
-#team{
+#team {
     background-color: #2ecc71;
     padding-top: 120px;
     padding-bottom: 120px;
 }
 
-#team .container{
+#team .container {
     text-align: center;
 }
 
-.socialIcon{
+.socialIcon {
     list-style-type: none;
     text-align: center;
     margin: 0;
@@ -202,7 +202,7 @@ h3 {
     display: inline;
 }
 
-.teamContent .row{
+.teamContent .row {
     overflow: hidden;
 }
 
@@ -212,7 +212,8 @@ h3 {
     padding-right: 5px;
     padding-left: 5px;
 }
-#contact{
+
+#contact {
     background-color: #34495e;
     padding-top: 120px;
     padding-bottom: 100px;
@@ -222,10 +223,9 @@ h3 {
     text-align: center;
 }
 
-.contactForm{
+.contactForm {
     width: 50%;
     margin: 0 auto;
-
 }
 
 input, textarea {
@@ -237,16 +237,25 @@ input, textarea {
     height: 40px;
 }
 
-textarea{
+textarea {
     height: 160px;
 }
 
-input[type=submit]{
-    background-color:  #e75c3c;
+input[type=submit] {
+    background-color: #e75c3c;
     margin-top: 20px;
     color: white;
     font-size: 20px;
     font-family: 'Oswald', sans-serif;
     letter-spacing: 3px;
     cursor: pointer;
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width:1170px) {
+    #mainArea > div {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 }
