@@ -251,11 +251,88 @@ input[type=submit] {
     cursor: pointer;
 }
 
-/* MEDIA QUERIES */
-
 @media only screen and (max-width:1170px) {
-    #mainArea > div {
+    #mainArea .container {
         padding-left: 20px;
         padding-right: 20px;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .mainContent {
+        margin-top: 150px;
+    }
+    h1 {
+        font-size: 56px;
+        margin-bottom: 20px;
+    }
+    .mainSlogan {
+        font-size: 14px;
+    }
+    .arrow {
+        width: 60px;
+        height: 60px;
+        margin: 120px auto 80px auto;
+    }
+    .fa-angle-down {
+        font-size: 3em;
+        line-height: 50px!important;
+    }
+    h2 {
+        font-size: 24px;
+    }
+    h2::after {
+        width: 120px;
+        margin: 5px auto;
+    }
+    .sectionText {
+        font-size: 14px;
+        margin: 10px auto 30px auto;
+    }
+    h3 {
+        font-size: 18px;
+        margin-top: 10px;
+    }
+    .contactForm {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width:640px) {
+    .col-4 {
+        width: 100%;
+        float: none;
+        margin-bottom: 40px;
+    }
+    h1 {
+        font-size: 48px;
+        margin-bottom: 20px;
+    }
+    .navbar {
+        overflow: hidden;
+        position: absolute;
+        right: 20px;
+    }
+    .responsiveNav{
+        background: url(../img/menuIcon.png) no-repeat;
+        display: block;
+        height: 30px;
+        width: 45px;
+        color: white;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    h1 {
+        font-size: 36px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .col-4 {
+        padding: 0;
+    }
+    #features>div>div>div>div>div:nth-child(3)>p, #features>div>div>div>div>div:nth-child(2)>p, #features>div>div>div>div>div:nth-child(1)>p {
+        padding: 20px;
     }
 }
