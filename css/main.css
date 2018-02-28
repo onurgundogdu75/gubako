@@ -251,6 +251,12 @@ input[type=submit] {
     cursor: pointer;
 }
 
+/* ---------- Navbar Style ---------- */
+
+
+
+/* ---------- Navbar Style End ---------- */
+
 @media only screen and (max-width:1170px) {
     #mainArea .container {
         padding-left: 20px;
@@ -314,11 +320,25 @@ input[type=submit] {
         right: 20px;
     }
     .responsiveNav{
-        background: url(../img/menuIcon.png) no-repeat;
         display: block;
-        height: 30px;
-        width: 45px;
+        font-size: 30px;
         color: white;
+        float: right;
+        cursor: pointer;
+    }
+    .container nav ul {
+        display: none;
+    }
+    .container nav ul.release{
+        display: block;
+    }
+    .container nav ul li{
+        float: none;
+        width: auto;
+        text-align: right;
+        margin: 0;
+        display: block;
+        padding-bottom: 10px;
     }
 }
 
