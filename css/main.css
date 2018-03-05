@@ -29,8 +29,29 @@ p {
 
 /* ---------- Navbar Style ---------- */
 
-.nav-hide {
-    display: inline;
+#mainArea > div > nav > ul {
+    display: -webkit-inline-box;
+    list-style: none;
+}
+
+#mainArea > div > nav > ul > li > a{
+    color: #ffffff;
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: none;
+    margin-left: 30px;
+    text-transform:uppercase;
+    border-bottom: 1px solid transparent;
+    padding-bottom: 5px;
+}
+
+#mainArea > div > nav > ul > li > a:hover{
+    border-bottom: 1px solid #ffffff;
+}
+
+.nav{
+    float: right;
 }
 
 /* ---------- Navbar Style End ---------- */
@@ -350,11 +371,15 @@ input[type=submit] {
         display: table;
         color: white;
     }
+
+    .nav{
+        float: none;
+    }
     .nav-hide {
         display: none;
     }
     nav ul {
-        display: table-cell;
+        display: table-cell!important;
         vertical-align: middle;
         padding-left: 0 !important;
     }
@@ -366,6 +391,10 @@ input[type=submit] {
         color: inherit;
         font-weight: bolder;
         text-decoration: none;
+    }
+    #mainArea > div > nav > ul > li > a{
+        font-size: 35px;
+        line-height: 80px;
     }
 }
 
