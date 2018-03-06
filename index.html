@@ -10,6 +10,8 @@
     <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Oswald:300,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Comfortaa:300" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <title>Gubako.com</title>
 </head>
 
@@ -29,27 +31,27 @@
             <nav class="nav-hide">
                 <ul class="nav">
                     <li>
-                        <a href="#">Home</a>
+                        <a href="#" onclick="smoothScroll(document.getElementById('#'))">Home</a>
                     </li>
                     <li>
-                        <a href="#">Feature</a>
+                        <a href="#" onclick="smoothScroll(document.getElementById('features'))">Feature</a>
                     </li>
                     <li>
-                        <a href="#">Portfolio</a>
+                        <a href="#" onclick="smoothScroll(document.getElementById('portfolio'))">Portfolio</a>
                     </li>
                     <li>
-                        <a href="#">Team</a>
+                        <a href="#" onclick="smoothScroll(document.getElementById('team'))">Team</a>
                     </li>
                     <li>
-                        <a href="#">Contact</a>
+                        <a href="#" onclick="smoothScroll(document.getElementById('contact'))">Contact</a>
                     </li>
                 </ul>
             </nav>
             <div class="mainContent">
-                <h1>LOREM IPSUM DOLOR</h1>
-                <p class="mainSlogan">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sodales id massa eget tempus. Integer et
+                <h1 class="wow fadeInDown">LOREM IPSUM DOLOR</h1>
+                <p class="mainSlogan wow fadeInDown">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sodales id massa eget tempus. Integer et
                     sapien enim. Morbi in orci lectus. In bibendum velit lorem, id tristique nunc tempor at.</p>
-                <div class="arrow">
+                <div class="arrow" onclick="smoothScroll(document.getElementById('features'))">
                     <i class="fas fa-angle-down" aria-hidden="true"></i>
                 </div>
             </div>
@@ -65,17 +67,17 @@
                     sapien enim. Morbi in orci lectus.</p>
                 <div class="feturesContent">
                     <div class="row">
-                        <div class="col-4">
+                        <div class="col-4 wow fadeInLeft">
                             <img src="img/webIcon.png" alt="webIcon">
                             <h3>Web Design</h3>
                             <p>Suspendisse potenti. Donec maximus quam vel mi interdum maximus.</p>
                         </div>
-                        <div class="col-4">
+                        <div class="col-4 wow fadeInUp">
                             <img src="img/mobilIcon.png" alt="webIcon">
                             <h3>Mobile Design</h3>
                             <p>Suspendisse potenti. Donec maximus quam vel mi interdum maximus.</p>
                         </div>
-                        <div class="col-4">
+                        <div class="col-4 wow fadeInRight">
                             <img src="img/brandingIcon.png" alt="webIcon">
                             <h3>Branding</h3>
                             <p>Suspendisse potenti. Donec maximus quam vel mi interdum maximus.</p>
@@ -94,7 +96,7 @@
             </div>
             <div class="portfolioContent">
                 <div class="row">
-                    <div class="col-4">
+                    <div class="col-4 wow flipInY">
                         <div class="item">
                             <img src="img/portfolioImage.png" alt="portfolioImage">
                             <div class="overlay">
@@ -104,7 +106,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-4">
+                    <div class="col-4 wow flipInY">
                         <div class="item">
                             <img src="img/portfolioImage.png" alt="portfolioImage">
                             <div class="overlay">
@@ -114,7 +116,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-4">
+                    <div class="col-4 wow flipInY">
                         <div class="item">
                             <img src="img/portfolioImage.png" alt="portfolioImage">
                             <div class="overlay">
@@ -126,7 +128,17 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-4">
+                    <div class="col-4 wow flipInY">
+                        <div class="item">
+                            <img src="img/portfolioImage.png" alt="portfolioImage">
+                            <div class="overlay">
+                                <img src="img/itemPlus.png" alt="Plus">
+                                <p class="protfolioTag">Project Name</p>
+                                <p class="portfolioCategories">Web Design</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 wow flipInY">
                         <div class="item">
                             <img src="img/portfolioImage.png" alt="portfolioImage">
                             <div class="overlay">
@@ -137,17 +149,7 @@
                         </div>
                     </div>
                     <div class="col-4">
-                        <div class="item">
-                            <img src="img/portfolioImage.png" alt="portfolioImage">
-                            <div class="overlay">
-                                <img src="img/itemPlus.png" alt="Plus">
-                                <p class="protfolioTag">Project Name</p>
-                                <p class="portfolioCategories">Web Design</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-4">
-                        <div class="item">
+                        <div class="item wow flipInY">
                             <img src="img/portfolioImage.png" alt="portfolioImage">
                             <div class="overlay">
                                 <img src="img/itemPlus.png" alt="Plus">
@@ -171,7 +173,7 @@
             </div>
             <div class="teamContent">
                 <div class="row">
-                    <div class="col-4">
+                    <div class="col-4 wow zoomInLeft">
                         <img src="img/teamMember.png" alt="member">
                         <h3>Micheal Neal</h3>
                         <p>Lead Designer</p>
@@ -184,7 +186,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="col-4">
+                    <div class="col-4 wow zoomInUp">
                         <img src="img/teamMember1.png" alt="member">
                         <h3>Kristina Nash</h3>
                         <p>Lead Designer</p>
@@ -197,7 +199,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="col-4">
+                    <div class="col-4 wow zoomInRight">
                         <img src="img/teamMember2.png" alt="member">
                         <h3>Adam Ball</h3>
                         <p>Lead Designer</p>
@@ -226,13 +228,46 @@
                     <input type="text" name="name" id="" placeholder="Name" required/>
                     <input type="email" name="email" id="" placeholder="Email" required/>
                     <textarea name="message" placeholder="Message" required></textarea>
-                    <input type="submit" value="SEND" />
+                    <input class="wow hinge" type="submit" value="SEND" />
                 </form>
             </div>
         </div>
     </section>
+    <script type='text/javascript'>
+        window.smoothScroll = function (target) {
+            var scrollContainer = target;
+            do { //find scroll container
+                scrollContainer = scrollContainer.parentNode;
+                if (!scrollContainer) return;
+                scrollContainer.scrollTop += 1;
+            } while (scrollContainer.scrollTop == 0);
+
+            var targetY = 0;
+            do { //find the top of target relatively to the container
+                if (target == scrollContainer) break;
+                targetY += target.offsetTop;
+            } while (target = target.offsetParent);
+
+            scroll = function (c, a, b, i) {
+                i++;
+                if (i > 30) return;
+                c.scrollTop = a + (b - a) / 30 * i;
+                setTimeout(function () {
+                    scroll(c, a, b, i);
+                }, 20);
+            }
+            // start scrolling
+            scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
+        }
+    </script>
+    <script src="js/WOW.js"></script>
+    <script>
+        new WOW().init();
+    </script>
     <script src="js/jquery-3.3.1.js"></script>
     <script src="js/main.js"></script>
+    <script>
+    </script>
 </body>
 
 </html>
