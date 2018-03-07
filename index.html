@@ -224,10 +224,10 @@
                     sapien enim. Morbi in orci lectus.</p>
             </div>
             <div class="contactContainer">
-                <form class="contactForm">
-                    <input type="text" name="name" id="" placeholder="Name" required/>
-                    <input type="email" name="email" id="" placeholder="Email" required/>
-                    <textarea name="message" placeholder="Message" required></textarea>
+                <form class="contactForm" id="contact-form" action="https://formspree.io/your@email.com" method="POST">
+                    <input type="text" name="name" id="inputName" placeholder="Name" required/>
+                    <input type="email" name="email" id="inputEmail" placeholder="Email" required/>
+                    <textarea name="message" placeholder="Message" id="inputMessage"required></textarea>
                     <input type="submit" value="SEND" />
                 </form>
             </div>
@@ -240,6 +240,25 @@
     <script src="js/jquery-3.3.1.js"></script>
     <script src="js/main.js"></script>
     <script>
+        $('#contact-form').submit(function (e) {
+            var name = document.getElementById('inputName'),
+            var name = document.getElementById('inputEmail'),
+            var name = document.getElementById('inputMessage');
+            if (!name.value || !email.value || !message.value) {
+                alertify.error('Lütfen Bilgilerinizi Kontrol Ediniz')
+
+            } else {
+                $ajax({
+                    url: "https://formspree.io/onurgundogdumail@gmail.com",
+                    method: "POST",
+                    data: $(this).serialize(),
+                    dataType: "json"
+                });
+                e.preventDefault()
+                $(this).get(0).reset()
+                alertify.success('Mesajınız Gönderilmiştir')
+            }
+        })
     </script>
 </body>
 
