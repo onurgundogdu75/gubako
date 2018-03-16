@@ -395,6 +395,7 @@ input[type=submit] {
     #mainArea > div > nav > ul > li > a{
         font-size: 35px;
         line-height: 80px;
+        margin-left: 0px;
     }
 }
 
