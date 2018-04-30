@@ -3,6 +3,11 @@
     margin: 0 auto;
 }
 
+#particles-js{
+    background-color: blue;
+    height: 100vh;
+}
+
 * {
     box-sizing: border-box;
 }
